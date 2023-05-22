@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 *{
@@ -5,320 +6,365 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+>>>>>>> 5c002d5 (font)
 }
-:root{
+:root {
+  /* colorPallet */
+  --accentColor: rgb(12, 59, 95);
+  --headingColor: rgb(0, 0, 0);
+  --textColor: rgb(94, 93, 93);
 
-    /* colorPallet */
-    --accentColor :rgb(12, 59, 95);
-    --headingColor:rgb(0, 0, 0);
-    --textColor:rgb(94, 93, 93);
-    
-    /* fontSize */
-    --menuFont:14px;
-    --bigFont:38px;
-    --h1Size:55px;
-    --h2Size:40px;
-    --h3Size:21px;
-    --textSize:16px;
+  /* fontSize */
+  --menuFont: 14px;
+  --bigFont: 38px;
+  --h1Size: 55px;
+  --h2Size: 40px;
+  --h3Size: 21px;
+  --textSize: 16px;
 }
-.section{
-    width: 100%;
-    height: 100%;
-    padding: 4rem 0 2rem;
+.section {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0 2rem;
 }
-.container{
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+.container {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
-img{
-    width:100%;
+img {
+  width: 100%;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-header{
-    width: 100%;
-    /* height: 500px; */
-
+header {
+  width: 100%;
+  /* height: 500px; */
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.headerContainer{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 2rem;
+.headerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
 }
 .logo {
-   display: block;
-    margin:auto 0;
-    flex-basis: 15%;
-    /* margin-right: 1rem; */
+  display: block;
+  margin: auto 0;
+  flex-basis: 15%;
+  /* margin-right: 1rem; */
 }
-.logo  img{
-    width: 80%;
+.logo img {
+  width: 80%;
 }
-.menu{
-    display: block;
-    margin:auto 0;
-    flex-basis: 60%;
+.menu {
+  display: block;
+  margin: auto 0;
+  flex-basis: 60%;
 }
-.menu ul li{
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 5px;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: var(--accentColor);
-    cursor: pointer;
+.menu ul li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--accentColor);
+  cursor: pointer;
 }
-.menu ul li:hover{
-    color: #000;
+.menu ul li:hover {
+  color: #000;
 }
 .OtherOptions {
-    flex-basis: 30%;
-    display: block;
-    margin:auto 0;
+  flex-basis: 30%;
+  display: block;
+  margin: auto 0;
 }
-.OtherOptions  ul li{
-    display: inline-flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    margin: 0 5px;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: var(--accentColor);
-    cursor: pointer;
+.OtherOptions ul li {
+  display: inline-flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--accentColor);
+  cursor: pointer;
 }
-.OtherOptions  ul li i{
-    font-size: 20px;
+.OtherOptions ul li i {
+  font-size: 20px;
 }
-.OtherOptions  ul li:hover{
-    color: #000;
-
+.OtherOptions ul li:hover {
+  color: #000;
 }
 
 /* annoucementBar */
-.announcementBar{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0.625rem;
-    background-color: var(--headingColor);
+.announcementBar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0.625rem;
+  background-color: var(--headingColor);
 }
 .announcementBar ul {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-transform: capitalize;
-
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
 }
 /* heroSection */
-.hero{
-    background-image: url(./assets/Perfect\ Waves.webp);
-    background-size: cover;
-    background-position: center;
-    
+.hero {
+  background-image: url(./assets/Perfect\ Waves.webp);
+  background-size: cover;
+  background-position: center;
 }
-.heroText{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
+.heroText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
-.heroText h1{
-    font-size: var(--bigFont);
-    font-weight: normal;
-    text-transform: capitalize;
-    margin-bottom: 1rem;
+.heroText h1 {
+  font-size: var(--bigFont);
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
 }
-.heroText a{
-    color: #fff;
-    font-size: var(--textSize);
-    text-transform: uppercase;
-    text-decoration: underline;
+.heroText a {
+  color: #fff;
+  font-size: var(--textSize);
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 /* cards */
-.shopCards{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-    padding: 0 2rem;
+.shopCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
 }
-.card{
-    display: flex;
-    align-items: baseline;
-    justify-content: end;
-    flex-direction: column;
-    padding: 2rem;
+.card {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  flex-direction: column;
+  padding: 2rem;
 }
 
-.card:nth-child(1){
-    flex-basis: 28%;
-    height: 500px;
-    background-image: url(./assets/Frontal\ Portrait.webp);
-    background-position: middle ;
-background-size: cover;
+.card:nth-child(1) {
+  flex-basis: 28%;
+  height: 500px;
+  background-image: url(./assets/Frontal\ Portrait.webp);
+  background-position: middle;
+  background-size: cover;
 }
-.card:nth-child(2){
-    flex-basis: 28%;
-    height: 500px;
-    background-image: url(./assets/Fit\ Woman.webp);
-    background-position: middle ;
-background-size: cover;
+.card:nth-child(2) {
+  flex-basis: 28%;
+  height: 500px;
+  background-image: url(./assets/Fit\ Woman.webp);
+  background-position: middle;
+  background-size: cover;
 }
-.card:nth-child(3){
-    flex-basis: 28%;
-    height: 500px;
-    background-image: url(./assets/Smilling\ Woman.webp);
-    background-position: middle;
-background-size: cover;
+.card:nth-child(3) {
+  flex-basis: 28%;
+  height: 500px;
+  background-image: url(./assets/Smilling\ Woman.webp);
+  background-position: middle;
+  background-size: cover;
 }
-.productCategory{
-    font-size:2rem;
-    text-transform: capitalize;
-    color: #fff;
-    padding-bottom:0.625rem ;
-    
+.productCategory {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #fff;
+  padding-bottom: 0.625rem;
 }
-.catDescription{
-    font-size: var(--textSize);
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 1.75rem;
+.catDescription {
+  font-size: var(--textSize);
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1.75rem;
 }
-.shopNowBtn{
-    width: 95%;
-    padding: 1.5rem 1rem;
-    background-color: #fff;
-    color: var(--headingColor);
-    text-align: center;
-    text-transform: capitalize;
-    border: none;
-    border-radius: 8px;
-
+.shopNowBtn {
+  width: 95%;
+  padding: 1.5rem 1rem;
+  background-color: #fff;
+  color: var(--headingColor);
+  text-align: center;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 8px;
 }
 /* into nirvana Logo banner */
-.intoNlogo{
+.intoNlogo {
   display: block;
   margin: 0 auto;
-    width: 88%;
-    height: auto;
-    padding: 2.75rem 0;
-    background-color: #EBEBEB;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-
+  width: 88%;
+  height: auto;
+  padding: 2.75rem 0;
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
 }
 
-.intoNlogo img{
-    width: 15%;
-    margin-bottom: 1rem;
-    
+.intoNlogo img {
+  width: 15%;
+  margin-bottom: 1rem;
 }
-.intoNlogo p{
-    text-transform: capitalize;
-    font-size: var(--textSize);
+.intoNlogo p {
+  text-transform: capitalize;
+  font-size: var(--textSize);
 }
-.lable{
-    position: absolute;
-   top: 0;
-   left: 7%;
-   text-align: center;
-    width: auto;
-    height: 100%;
-    padding: 1rem ;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    background-color: #000;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.775rem;
-    font-weight: bold;
- 
+.lable {
+  position: absolute;
+  top: 0;
+  left: 7%;
+  text-align: center;
+  width: auto;
+  height: 100%;
+  padding: 1rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.775rem;
+  font-weight: bold;
 }
 /* teanding */
-.tranding{
-    display: block;
-    margin: 0 auto;
-      width: 88%;
-      height: 60vh;
-      padding:5rem 0;
-background-image: url(./assets/Reading\ Nook\ by\ Window.webp);  
-background-position: center;
-background-size: cover;
-    display: flex;
-      align-items:center;
-      justify-content: baseline;
-      flex-direction: column;
-      position: relative; 
+.tranding {
+  display: block;
+  margin: 0 auto;
+  width: 88%;
+  height: 60vh;
+  padding: 5rem 0;
+  background-image: url(./assets/Reading\ Nook\ by\ Window.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-direction: column;
+  position: relative;
 }
-.tranding img{
-    display: block;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 55%;
+.tranding img {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 55%;
 }
-.trance{
-    padding: 0.625rem 6rem;
-    color: var(--accentColor);
-    font-size: var(--h1Size);
+.trance {
+  padding: 0.625rem 6rem;
+  color: var(--accentColor);
+  font-size: var(--h1Size);
+  text-transform: capitalize;
+  background-color: rgba(235, 235, 235, 0.5);
+  border: none;
+  border-radius: 0.625rem;
+  z-index: 2;
+}
+.sale {
+  position: absolute;
+  bottom: 40%;
+  font-size: 30px;
+  font-weight: 500;
+}
+.sale span {
+  text-transform: uppercase;
+  font-size: var(--h2Size);
+}
+.saleCat {
+  display: block;
+  margin: 0 auto;
+  width: 88%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cat {
+  flex-basis: 24.8%;
+  background-color: var(--textColor);
+  padding: 2rem 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.725rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  cursor: pointer;
+}
+.cat:hover {
+  background-color: #000;
+  transition: 0.6s;
+}
+/* slideBox */
+.flexSlide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 88%;
+  height: 100%;
+  margin-inline: auto;
+}
+.slideText,
+.slideImg {
+  flex-basis: 45%;
+  height: 100%;
+  text-align: center;
+}
+.slideImg img {
+  width: 100%;
+}
+.slideText h3 {
+  font-size: var(--h2Size);
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.flexSlide p:nth-child(2) {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  font-weight: 550;
+  margin-bottom: 1rem;
+}
+.flexSlide p:nth-child(3), .flexSlide p:nth-child(4), .flexSlide p:nth-child(5), .flexSlide p:nth-child(6) {
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--textColor);
+}
+.eneTemBtn{
+    font-size: 1rem;
     text-transform: capitalize;
-    background-color: rgba(235, 235, 235, 0.5);
-    border: none;
-    border-radius: 0.625rem;
-    z-index: 2;
-}
-.sale{
-    position: absolute;
-    bottom: 40%;
-    font-size: 30px;
-    font-weight: 500;
-}
-.sale span{
-    text-transform: uppercase;
-    font-size: var(--h2Size);
-}
-.saleCat{
-display: block;
-margin: 0 auto;
-    width: 88%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     
 }
-.cat{
-    flex-basis: 24.8%;
-    background-color: var(--textColor);
-    padding: 2rem 2rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.725rem;
-    text-align: center;
-    border-radius: 0.625rem;
-    cursor: pointer;
 
+<<<<<<< HEAD
 }
 .cat:hover{
     background-color: #000;
     transition: .6s;
 
 }
+=======
+>>>>>>> 5c002d5 (font)

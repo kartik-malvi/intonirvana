@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-=======
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
->>>>>>> 5c002d5 (font)
+  font-family: 'Montserrat', sans-serif;
 }
 :root {
   /* colorPallet */
@@ -38,6 +30,10 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+body{
+    background-color: #fff;
+
 }
 img {
   width: 100%;
@@ -97,7 +93,7 @@ a {
   display: inline-flex;
   align-items: center;
   /* justify-content: space-between; */
-  margin: 0 5px;
+  margin: 0 3px;
   text-transform: uppercase;
   font-size: 14px;
   color: var(--accentColor);
@@ -250,7 +246,7 @@ a {
   font-weight: bold;
 }
 /* teanding */
-.tranding {
+.tranding{
   display: block;
   margin: 0 auto;
   width: 88%;
@@ -275,7 +271,7 @@ a {
 .trance {
   padding: 0.625rem 6rem;
   color: var(--accentColor);
-  font-size: var(--h1Size);
+  font-size: 2.125rem;
   text-transform: capitalize;
   background-color: rgba(235, 235, 235, 0.5);
   border: none;
@@ -302,9 +298,9 @@ a {
   justify-content: space-between;
 }
 .cat {
-  flex-basis: 24.8%;
+  flex-basis: 24.5%;
   background-color: var(--textColor);
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
   color: #fff;
   text-transform: uppercase;
   font-size: 0.725rem;
@@ -327,9 +323,12 @@ a {
 }
 .slideText,
 .slideImg {
-  flex-basis: 45%;
+  flex-basis: 50%;
   height: 100%;
   text-align: center;
+}
+.slideText{
+    flex-basis: 45%;
 }
 .slideImg img {
   width: 100%;
@@ -353,18 +352,339 @@ a {
   margin-bottom: 1rem;
   color: var(--textColor);
 }
+.flexSlide p:nth-child(6){
+    margin-bottom: 4rem;
+}
 .eneTemBtn{
-    font-size: 1rem;
+    font-size: 0.875rem;
+    text-transform: capitalize;  
+    background-color: rgba(235, 235, 235, 0.9);
+    display: block;
+    width: 280px;
+    padding: 0.625rem 0.625rem;
+    border: none;
+    border-radius: 0.425rem;
+    margin-inline: auto;
     text-transform: capitalize;
+    cursor: pointer;
+}
+.eneTemBtn a{
+    color: var(--accentColor);
+
+}
+.eneTemBtn:hover  {
+background-color: rgb(94, 93, 93, 0.5);
+}
+.eneTemBtn:hover a{
+    color: #fff;
+
+}
+/* gridBanner */
+.grid{
+    margin-inline: auto;
+    width: 100%;
+    height: 130vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+}
+.gridItems{
+    position: relative;
     
 }
-
-<<<<<<< HEAD
+.gridItems:nth-child(1){
+    background-image: url(./assets/11062b_df334c3d96de4a53b06017f382cd6f95~mv2.webp);
+    background-size: cover;
+    background-position: center;
+    
 }
-.cat:hover{
-    background-color: #000;
+.gridItems:nth-child(4){
+    background-image: url(./assets/a3c153_bbf1019446e34069a3b96c18f172e810~mv2.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+.gridItems:nth-child(2){
+    background: radial-gradient(circle at 50% 50%, #E4EBFC 0%, #589BE3 32.48291015625%, #002F5E 62.78076171875%, #000000 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    
+}
+.gridText{
+    font-size: var(--h3Size);
+    color: var(--textColor);
+    text-transform: capitalize;
+}
+.gridItems:nth-child(2) img{
+    width: 25%;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    margin-right: 4rem;
+  
+}
+.lifeStyle{
+    position: absolute;
+    top: -8%;
+    right: 30%;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    padding: 1rem;
+    writing-mode: vertical-rl;
+    transform: rotate(360deg); 
+    font-size: var(--h1Size);   
+    color: #000;
+    text-transform: capitalize;
+}
+.cupnImg img{
+    width: 40%;
+}
+.gridItems:nth-child(3){
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.cupnImg{
+    flex-basis: 30%;
+    position: absolute;
+    left: -12%;
+    top: 10%;
+}
+.cupnText{
+    flex-basis: 70%;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.offerLbale{
+    font-size: var(--h2Size);
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.offerText{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.offerBold{
+    font-size: 1.5rem;
+    font-weight: 550;
+    text-transform: capitalize;
+}
+.offerEnd p{
+font-size: 1rem;
+color: var(--textColor);
+margin-bottom: 1.5rem;
+}
+.joinBtn{
+    /* display: block; */
+   padding: 0.625rem 4rem;
+   border:1px solid black ; 
+   font-size: 0.875rem;
+   color: #000;
+   font-weight: 500;
+   border-radius: 5px;
+   
+}
+/* productCard */
+.productCatTitle{
+    font-size: var(--h3Size);
+    margin-inline: auto;
+   width: 88%;
+   text-transform: uppercase;
+   font-weight: 500;
+   padding: 1rem 0;
+    
+}
+.productFlex,.bannerFlex, .feature{
+    margin-inline: auto;
+    width: 88%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.ProductCards{
+    width: 20%;
+    height: auto;
+    padding: 0.625rem;
+    position: relative;
+}
+.productImg{
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+.productdetails{
+    display: inline-flex;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    
+}
+.description, .price{
+    font-size: 0.875rem;
+}
+.nextDelivery, .vipWaiting{
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+}
+.outStock{
+    font-weight: 500;
+}
+.productBtn a{
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.productLable{
+    display: block;
+    position: absolute;
+    top: 63%;
+   max-width: 100%;
+   padding: 0.625rem 1.75rem;
+   background-color: #000;
+   color: #fff;
+   text-transform: capitalize;
+   cursor: pointer;
+   font-size: 0.875rem;
+}
+.productLable:hover{
+    background-color: #ff5700;
     transition: .6s;
+}
+.variationOptions ul {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.variationOptions ul li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+/* brandBanner */
+.bannerFirst, .bannerSecound{
+    flex-basis: 45%;
+    position: relative;
+}
+.bannerLable{
+    width: 100%;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 550;
 
 }
-=======
->>>>>>> 5c002d5 (font)
+.bannerBtn ,.newssletterBtn{
+    padding: 0.625rem 0.875rem;
+    border: 1px solid #000;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    color: #000;
+    
+}
+/* /// */
+.newsletter{
+   margin-inline: auto;
+    width: 88%;
+    height: 60vh;
+    padding: 5rem 0;
+    background-image: url(./assets/Fashion\ Model\ .webp);
+    background-position:300px center;
+    background-size: contain;
+    background-repeat: no-repeat;
+position: relative;
+
+
+}
+.banner-bg{
+    background-color: rgba(235, 235, 235, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 2rem 3.75rem;
+    margin-inline: auto;
+    text-align: center;
+    
+    
+}
+.newsletterTitle{
+    font-size: var(--h2Size);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.wordStyle{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+}
+.newssletterBtn{
+position: absolute;
+left: 50%;
+bottom: 10%;
+text-transform: uppercase;
+font-size: 0.625rem;
+padding: 0.625rem 3rem;
+font-weight: 500;
+cursor: pointer;
+}
+/* featureCards */
+.featureCards{
+    flex-basis: 16%;
+    height: 200px;
+    background-color: #f6ebe4;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.675rem;
+    line-height: 0.875rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.featureCards p{
+    margin-bottom: 1rem;
+}
+/* icon */
+.bx-right-arrow-alt{
+    font-size: 1.175rem;
+    position: absolute;
+    bottom: -20%;
+}
+.featureCards:hover{
+    margin-top: -1rem;
+    transition: .6s;
+}
+.featureCards:hover .bx-right-arrow-alt{
+    bottom: 10%;
+    transition: .4s;
+}
+.featureCards:nth-child(1){
+    background-image: url(./assets/Perfect\ Waves.webp);
+    background-size: cover;
+    background-position: center;
+}
+.featureCards:nth-child(6){
+    background-image: url(./assets/Gravel.webp);
+    background-size: cover;
+    background-position: center;
+}
+.featureHeading{
+    text-transform: uppercase;
+    font-size: 0.725rem;
+line-height: 0.875rem;
+    padding: 0.875rem;
+    margin-bottom: 0.875rem;
+    background-color: rgba(235, 235, 235, 0.7);
+
+}

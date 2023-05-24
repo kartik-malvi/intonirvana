@@ -122,6 +122,10 @@ a {
   align-items: center;
   justify-content: space-between;
   text-transform: capitalize;
+  flex-wrap: wrap;
+}
+.announcementBar ul{
+    flex: 1 1 100%;
 }
 /* heroSection */
 .hero {
@@ -156,6 +160,7 @@ a {
   width: 100%;
   height: 100%;
   padding: 0 2rem;
+  flex-wrap: wrap;
 }
 .card {
   display: flex;
@@ -163,6 +168,7 @@ a {
   justify-content: end;
   flex-direction: column;
   padding: 2rem;
+  /* flex: 1 1 100%; */
 }
 
 .card:nth-child(1) {
@@ -300,7 +306,8 @@ a {
   justify-content: space-between;
 }
 .cat {
-  flex-basis: 24.5%;
+    gap: 1rem;
+  flex:1 1 100%;
   background-color: var(--textColor);
   padding: 2rem 1rem;
   color: #fff;
@@ -322,10 +329,11 @@ a {
   width: 88%;
   height: 100%;
   margin-inline: auto;
+  flex-wrap: wrap;
 }
 .slideText,
 .slideImg {
-  flex-basis: 50%;
+  flex:1 1 50%;
   height: 100%;
   text-align: center;
 }
@@ -896,3 +904,170 @@ footer .container{
     font-size: var(--textSize);
     color: #fff;
   }
+
+  /* RESPONSIVE */
+
+  @media screen and (max-width: 767px) {
+    /* CSS rules for devices with a maximum width of 767px (such as mobile phones) */
+    :root{
+        --menuFont: 14px;
+  --bigFont: 38px;
+  --h1Size: 40px;
+  --h2Size: 32px;
+  --h3Size: 18px;
+  --textSize: 16px;
+    }
+.section{
+    padding: 1rem 0 1rem;
+}
+ /* herader */
+    .announcementBar ul li {
+        font-size: 0.825rem;
+        flex-basis: 50%;
+        margin-bottom: 0.625rem;
+        }
+
+        /* menu */
+        .headerContainer{
+
+        }
+        .menu{
+            display: none;
+            flex-basis: 0;
+            order:3;
+        }
+        .logo{
+            flex-basis: 20%;
+            order:1;
+        }
+        .OtherOptions{
+            flex-basis: 58%;
+            order:2;
+        }
+        /* category */
+        .shopCards {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            padding: 0 0.625rem;
+           
+            flex-direction: column;
+        }
+        .card {
+            flex-basis: width;
+        }
+        .card{
+            width: 580px;
+            
+        }
+        .intoNlogo{
+            margin: 0;
+            width: 80%;
+        }
+        .tranding{
+            margin: 0 ;
+  width: 80%;
+  height: 40vh;
+        }
+        .lable {
+            left: 0;
+            
+        }
+        .tranding img {
+            width: 200px;
+        }
+        .trance{
+            padding: 1rem;
+            font-size: 1.585rem;
+            margin-bottom: 1rem;
+        }
+        .sale {
+            position: absolute;
+            bottom: 30%;
+            font-size: 28px;
+            font-weight: 500;
+          }
+          .saleCat {
+            display: block;
+            margin: 0 ;
+            gap: 0.425rem;
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+
+          .flexSlide {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 80%;
+            height: 100%;
+            margin-inline: auto;
+            flex-wrap: wrap;
+          }
+          .slideText,
+.slideImg {
+    flex-basis: 50%;
+}
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for devices with a minimum width of 768px and a maximum width of 991px (such as tablets) */
+    :root{
+        --menuFont: 14px;
+  --bigFont: 38px;
+  --h1Size: 40px;
+  --h2Size: 32px;
+  --h3Size: 18px;
+  --textSize: 16px;
+    }
+ 
+    .announcementBar ul li {
+        font-size: 0.625rem;
+        }
+        .menu ul li, .OtherOptions ul li {
+          font-size: 0.625rem;
+        }
+        .OtherOptions ul li i {
+            font-size: 0.625rem;
+          }
+          .description, .price, .productBtn a{
+            font-size: 0.625rem;
+        }
+        .nextDelivery, .vipWaiting{
+            font-size: 0.625rem;
+            margin-bottom: 5px;
+        }
+        .outStock{
+            font-weight: 500;
+        }
+        .productLable{
+            font-size: 0.625rem;
+            top: 42%;
+            left: 0;
+        }
+
+
+
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* CSS rules for devices with a minimum width of 992px and a maximum width of 1199px (such as small desktop screens) */
+    .announcementBar ul li {
+      font-size: 0.825rem;
+      }
+      .menu ul li, .OtherOptions ul li {
+        font-size: 0.675rem;
+      }
+
+  }
+  
+  @media screen and (min-width: 1200px) {
+    /* CSS rules for devices with a minimum width of 1200px (such as large desktop screens) */
+  }
+  

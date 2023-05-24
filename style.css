@@ -946,29 +946,26 @@ footer .container{
         }
         /* category */
         .shopCards {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            width: 100%;
-            height: 100%;
-            padding: 0 0.625rem;
-           
-            flex-direction: column;
+         
+          flex-direction: column;
+          gap: 2rem;
         }
-        .card {
-            flex-basis: width;
-        }
+      
         .card{
-            width: 580px;
+           width: 100%;
+           background-position: center;
+           background-size: cover;
+
             
         }
+      
         .intoNlogo{
             margin: 0;
-            width: 80%;
+            width: 100%;
         }
         .tranding{
             margin: 0 ;
-  width: 80%;
+  width: 100%;
   height: 40vh;
         }
         .lable {
@@ -993,7 +990,7 @@ footer .container{
             display: block;
             margin: 0 ;
             gap: 0.425rem;
-            width: 80%;
+            width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
@@ -1002,18 +999,102 @@ footer .container{
           }
 
           .flexSlide {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            width: 80%;
-            height: 100%;
-            margin-inline: auto;
-            flex-wrap: wrap;
+          flex-direction: column;
+          gap: 2rem;
           }
-          .slideText,
-.slideImg {
-    flex-basis: 50%;
-}
+          .grid{
+            margin-inline: auto;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+            grid-template-rows: repeat(4, 2fr);
+        }
+     .productFlex{
+        width: 100%;
+     }
+     .productFlex,.bannerFlex, .feature{
+        flex-direction: column;
+     }
+     .ProductCards{
+        width: 100%;
+        position: relative;
+     }
+     .description, .price{
+        font-size: 1.25rem;
+    }
+    .nextDelivery, .vipWaiting{
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+    }
+    .newsletter{
+        width: 100%;
+    }
+    .newssletterBtn{
+        left: 35%;
+    }
+    .newssletterBtn{
+       background-color: #fff;
+       font-weight: 550;
+    }
+    .feature{
+        width: 100%;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .featureCards{
+        width: 100%;
+    }
+    .brandLogoSec{
+        flex-direction: column;
+    }
+    .footerBanner{
+        flex-direction: column;
+    }
+    .flogo img{
+       width: 20%;
+       display: block;
+      }
+      .midIcon{
+        flex-basis: 40%;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+      }
+      .ftext{
+        flex-basis: 20%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .ftext img{
+        width: 20%;
+      }
+      .footerFlex{
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .footerItemHeading{
+        font-size: 1.25rem;
+        
+      }
+      .footerItms ul li{
+        font-size: 1rem;
+      }
+      .productLable{
+        display: block;
+        width: 97%;
+        top: 85%;
+        padding: 1rem 0;
+        height: auto;
+        text-align: center;
+        font-size: 1.125rem;
+
+      }
+   
+   
+
   }
   
   @media screen and (min-width: 768px) and (max-width: 991px) {
